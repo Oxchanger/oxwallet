@@ -30,8 +30,6 @@ class HomePage extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 30)),
                       ),
-                      const Text('Spend conveniently at any time and anywhere',
-                          style: TextStyle(color: Colors.white, fontSize: 12)),
                       Padding(
                         padding: const EdgeInsets.all(20.0),
                         child: Card(
