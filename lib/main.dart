@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'OxWallet',
+      color: Colors.deepPurple,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
         useMaterial3: true,
       ),
       home: const HomePage(),
