@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:oxwallet_app_1/pages/home_page/create_wallet_button.dart';
+import 'package:oxwallet_app_1/pages/home_page/hero_section.dart';
+import 'package:oxwallet_app_1/pages/home_page/import_wallet_button.dart';
+import 'package:oxwallet_app_1/pages/home_page/text_section.dart';
+import 'package:oxwallet_app_1/pages/home_page/title_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -6,65 +11,48 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Card(
-              color: Colors.deepPurple[700],
-              child: SizedBox(
-                width: double.infinity,
-                child: Padding(
-                  padding: const EdgeInsets.all(100.0),
-                  child: Column(
-                    children: [
-                      Image.asset(
-                        'images/logo.png.png',
-                        width: 64,
-                        height: 64,
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(30.0),
-                        child: Text('OxWallet',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 30)),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(20.0),
-                        child: Card(
-                          color: Colors.deepPurple[500],
-                          child: const Row(
-                            children: <Widget>[
-                              Expanded(
-                                child: Text(
-                                  'Deliver features faster',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 10),
-                                ),
-                              ),
-                              Expanded(
-                                child: Text('Deliver features faster',
-                                    textAlign: TextAlign.center),
-                              ),
-                              Expanded(
-                                child: Text('Deliver features faster',
-                                    textAlign: TextAlign.center),
-                              ),
-                            ],
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ],
+        backgroundColor: Colors.deepPurple[600],
+        appBar: AppBar(
+          backgroundColor: Colors.deepPurple,
         ),
-      ),
-    );
+        body: const Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            HeroSection(),
+            TitleSection(),
+            TextSection(),
+            ImportWalletButton(),
+            CreateWalletButton()
+          ],
+        ));
   }
+
+//  Padding(
+//                         padding: const EdgeInsets.all(20.0),
+//                         child: Card(
+//                           color: Colors.deepPurple[500],
+//                           child: const Row(
+//                             children: <Widget>[
+//                               Expanded(
+//                                 child: Text(
+//                                   'Deliver features faster',
+//                                   style: TextStyle(
+//                                       color: Colors.white, fontSize: 10),
+//                                 ),
+//                               ),
+//                               Expanded(
+//                                 child: Text('Deliver features faster',
+//                                     textAlign: TextAlign.center),
+//                               ),
+//                               Expanded(
+//                                 child: Text('Deliver features faster',
+//                                     textAlign: TextAlign.center),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       )
 
   // @override
   // Widget build(BuildContext context) {
