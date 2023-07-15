@@ -35,7 +35,7 @@ Contributions are always welcome!
 
 See `contributing.md` for ways to get started.
 
-Please adhere to this project's `code of conduct`.
+[code of conduct](blob/main/CODE_OF_CONDUCT.md).
 
 ## Authors
 
