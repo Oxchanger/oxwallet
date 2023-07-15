@@ -25,6 +25,10 @@ Clone the project
   git clone https://link-to-project
 ```
 
+## Documentation
+
+[Documentation](https://linktodocumentation)
+
 ## Contributing
 
 Contributions are always welcome!
