@@ -22,7 +22,7 @@ The project is currently in development and the team is working on the dev branc
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Oxchanger/oxwallet.git
 ```
 
 ## Documentation
